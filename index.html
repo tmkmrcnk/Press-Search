@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Health Search</title>
+    <link rel="stylesheet" href="./static/custom.css">
+    <script src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load('search', '1');
+        var cx = '014746545704702299635:fhbjcy3lw_o';
+        google.setOnLoadCallback(function(){
+          new google.search.CustomSearchControl(cx).draw('cse');
+        }, true);
+    </script>    
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <div class="main">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">  <h1> <p class="text-center">Health Search</p></h1> </div>
+        </div>
+        <div id="cse" style="width:100%;">Loading...</div>
+    </div>
+  </body>
+</html>
